@@ -19,7 +19,7 @@ class BluebirdPromiseProfiler {
 		// check for bluebird promise dependency
 		let bluebirdPromiseUsed = null;
 		try {
-			bluebirdPromiseUsed = require(`../../bluebird`);
+			bluebirdPromiseUsed = Promise;
 		}
 		catch (e) {
 			ErrorLib.throwError(ErrorLib.errorMap.PromiseNotFound);

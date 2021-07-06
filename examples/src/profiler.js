@@ -1,5 +1,6 @@
 'use strict';
 
+global.Promise = require("bluebird");
 const route = require('./routes/route');
 
 const promiseProfiler = require('bluebird-promise-profiler');
